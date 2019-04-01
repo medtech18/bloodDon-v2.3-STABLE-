@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="fr.blooddonbeta.SearchActivity"
+    tools:layout_editor_absoluteY="25dp">
+    <ImageButton
+        android:id="@+id/mainSearchIcon"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:onClick="mainSearchClicked"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/mainChatIcon"
+        app:layout_constraintStart_toEndOf="@+id/mainProfileIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainsearchiconcolored" />
+
+    <ImageButton
+        android:id="@+id/mainChatIcon"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:onClick="chatSearch"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainchaticon" />
+
+    <ImageButton
+        android:id="@+id/mainProfileIcon"
+        android:layout_width="30dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:scaleType="fitStart"
+        android:onClick="profileSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainprofileicon" />
+
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="485dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSearchIcon"
+        app:rb_color="@color/colorPrimary"
+        app:rb_duration="4000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="7">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView4"
+            android:layout_width="229dp"
+            android:layout_height="234dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fixedbloodsearch"
+            android:onClick="animationClick" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="100 Km"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="194dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:onClick="changeSettingClick"
+            android:text="Change Settings"
+            android:textStyle="bold"
+            android:theme="@style/ChangeSettingsButStyle"
+            tools:layout_editor_absoluteX="95dp" />
+
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:id="@+id/donationSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:activeBgColor="@android:color/holo_red_light"
+            app:activeTextColor="@android:color/white"
+            app:inactiveBgColor="@android:color/white"
+            app:inactiveTextColor="@android:color/black"
+            app:separatorColor="@color/gray_very_light"
+            app:textToggleLeft="Donor"
+            app:textToggleRight="Recipient"
+            app:toggleWidth="104dp" />
+
+
+    </com.skyfishjy.library.RippleBackground>
+
+
+</android.support.constraint.ConstraintLayout>

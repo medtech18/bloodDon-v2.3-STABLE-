@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f3da4443</color>
+    <color name="colorPrimaryDark">#DCDCDC</color>
+    <color name="colorAccent">#FF7560</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00fd5a57</color>
+    <color name="gray">#eaeaea</color>
+    <color name="darkGray">#7c7c7c</color>
+    <color name="spinner">#f7f7f7</color>
+
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <color name="streetColoBlue">#08dcf4</color>
+    <color name="streetColorGreen">#24f408</color>
+    <color name="streetColorPurple">#9608f4</color>
+    <color name="streetColorYellow">#e8f408</color>
+
+
+    <color name="notSeenColor">#eaeaea</color>
+    <color name="noInternet">#ff0505</color>
+    <color name="withInternet">#22ec72</color>
+
+
+
+
+
+
+
+</resources>

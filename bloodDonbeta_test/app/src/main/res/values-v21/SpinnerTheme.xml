@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="genderTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/gender_spinner</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="birthdayTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/birthday_spinner</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="bloodTypeTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bloodtype_spinner</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="fullNameTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/fullname_edittext</item>
+
+    </style>
+
+    <style name="weightTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/weight_edittext</item>
+
+    </style>
+
+
+</resources>

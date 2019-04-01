@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/customborder">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardProfilePicture"
+        android:layout_width="84dp"
+        android:layout_height="85dp"
+        android:src="@drawable/defaultprofileimage"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/defaultprofileimage" />
+
+
+    <TextView
+        android:id="@+id/cardFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Mohamed ELASRI"
+        android:textColor="@color/darkGray"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/messageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardProfilePicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardBloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+
+        android:text="Type: O -"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cardFullName"
+        app:layout_constraintTop_toBottomOf="@+id/cardFullName" />
+
+    <TextView
+        android:id="@+id/cardDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 km away from you"
+        app:layout_constraintStart_toStartOf="@+id/cardBloodType"
+        app:layout_constraintTop_toBottomOf="@+id/cardBloodType" />
+
+    <ImageButton
+        android:id="@+id/sendMessageButton"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat" />
+
+    <ImageButton
+        android:id="@+id/mapButton"
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:scaleType="centerCrop"
+        android:onClick="cardMapButton"
+        app:layout_constraintStart_toStartOf="@+id/sendMessageButton"
+        app:layout_constraintTop_toBottomOf="@+id/sendMessageButton"
+        app:srcCompat="@drawable/gps" />
+
+</android.support.constraint.ConstraintLayout>

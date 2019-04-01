@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/mainHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="25dp">
+
+
+
+            <ImageButton
+                android:id="@+id/mainSearchIcon"
+                android:layout_width="30dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:onClick="mainSearchClicked"
+                android:scaleType="fitStart"
+                app:layout_constraintEnd_toStartOf="@+id/mainChatIcon"
+                app:layout_constraintStart_toEndOf="@+id/mainProfileIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mainsearchiconcolored" />
+
+            <ImageButton
+                android:id="@+id/mainChatIcon"
+                android:layout_width="30dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:onClick="chatSearch"
+                android:scaleType="fitStart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mainchaticon" />
+
+            <ImageButton
+                android:id="@+id/mainProfileIcon"
+                android:layout_width="30dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:scaleType="fitStart"
+                android:onClick="profileSettings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/mainprofileicon" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainHeader"
+        android:layout_marginTop="10dp"
+
+        />
+
+</RelativeLayout>

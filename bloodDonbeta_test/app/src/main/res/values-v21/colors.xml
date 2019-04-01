@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#da4443</color>
+    <color name="colorPrimaryDark">#DCDCDC</color>
+    <color name="colorAccent">#FF7560</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00fd5a57</color>
+    <color name="gray">#eaeaea</color>
+    <color name="darkGray">#828282</color>
+    <color name="spinner">#f7f7f7</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    <color name="notSeenColor">#eaeaea</color>
+
+
+</resources>

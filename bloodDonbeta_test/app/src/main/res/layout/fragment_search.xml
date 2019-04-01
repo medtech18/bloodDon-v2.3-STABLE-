@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="fr.blooddonbeta.SearchActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+
+    <com.skyfishjy.library.RippleBackground
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="@color/colorPrimary"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="7">
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView4"
+            android:layout_width="229dp"
+            android:layout_height="234dp"
+            android:layout_below="@+id/switch1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fixedbloodsearch"
+            android:onClick="animationClick" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/waitdots"
+            android:layout_width="92dp"
+            android:layout_height="37dp"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/textView3"
+            android:background="@drawable/waitdots"
+            tools:layout_editor_absoluteX="198dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2"
+            android:layout_alignTop="@+id/waitdots"
+            android:text="Searching "
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:text="100 Km"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="194dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/waitdots"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="Change Settings"
+            android:textStyle="bold"
+            android:onClick="changeSettingClick"
+            android:theme="@style/ChangeSettingsButStyle"
+            tools:layout_editor_absoluteX="95dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Donor"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+    </com.skyfishjy.library.RippleBackground>
+
+
+</android.support.constraint.ConstraintLayout>
